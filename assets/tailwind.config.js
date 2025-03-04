@@ -15,7 +15,25 @@ module.exports = {
     extend: {
       colors: {
         brand: "#FD4F00",
-      }
+      },
+      keyframes: {
+        // keyframes name must match the name you use in your animation property
+        'gradient-animation': {
+          '0%': {
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-position': '100% 50%',
+          },
+          '100%': {
+            'background-position': '0% 50%',
+          }
+        },
+      },
+      animation: {
+        // This name is what you will use with `animate-<NAME>` utilities
+        'gradient-animation': 'gradient-animation 10s ease infinite',
+      },
     },
   },
   plugins: [

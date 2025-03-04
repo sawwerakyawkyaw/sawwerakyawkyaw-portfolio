@@ -2,4 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer utilities {
+  .animated-gradient {
+    @apply h-screen bg-[length:300%_300%] animate-gradient-animation;
+    background-image: linear-gradient(45deg, #4158D0, #edffdf, #cfd9ff, #ffebc4);
+  }
+}
+
 /* This file is for your main application CSS */
