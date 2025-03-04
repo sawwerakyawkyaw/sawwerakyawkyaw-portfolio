@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -6,6 +9,45 @@
   .animated-gradient {
     @apply h-screen bg-[length:300%_300%] animate-gradient-animation;
     background-image: linear-gradient(45deg, #4158D0, #edffdf, #cfd9ff, #ffebc4);
+  }
+
+  .padding-page-top {
+    @apply pt-[100px];
+  }
+}
+
+/* Override default heading styles at the base layer */
+@layer base {
+  h1 {
+    @apply
+      [font-family:'Manrope',serif]
+      [font-size:2.5rem]
+      font-bold
+      [color:var(--text-color)];
+  }
+
+  h2 {
+    @apply
+      [font-family:'Manrope',serif]
+      [font-size:2rem]
+      font-bold
+      [color:var(--text-color)];
+  }
+
+  h3 {
+    @apply
+      [font-family:'Manrope',sans-serif]
+      [font-size:1.5rem]
+      font-medium
+      [color:var(--text-color)];
+  }
+
+  h4 {
+    @apply
+      [font-family:'Manrope',sans-serif]
+      [font-size:1.25rem]
+      font-medium
+      [color:var(--text-color)];
   }
 }
 

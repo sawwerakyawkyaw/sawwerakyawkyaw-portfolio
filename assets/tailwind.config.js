@@ -14,7 +14,38 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        colors: {
+          // Use custom names that make sense in your design system
+          'bg-light-grey': '#F3F3F3',
+          'bg-off-white': '#f9f9f9',
+          'border-color': '#D4D4D4',
+          'text-color': '#202124',
+          'secondary-text': '#999CA2',
+
+          // Primary color set
+          'primary': '#12c98c',
+          'primary-hover': 'rgba(18, 201, 140, 0.35)',
+
+          // Office color set
+          'office': '#12c98c',
+          'office-hover': 'rgba(18, 201, 140, 0.35)',
+          'office-hover-light': 'rgba(18, 201, 140, 0.15)',
+
+          // Studio color set
+          'studio': '#5572f3',
+          'studio-hover': 'rgba(89, 122, 255, 0.35)',
+          'studio-hover-light': 'rgba(89, 122, 255, 0.15)',
+
+          // Garage color set
+          'garage': '#f57921',
+          'garage-hover': 'rgba(255, 138, 49, 0.35)',
+          'garage-hover-light': 'rgba(255, 138, 49, 0.15)',
+
+          // Shop color set
+          'shop': '#be64fe',
+          'shop-hover': 'rgba(190, 100, 254, 0.35)',
+          'shop-hover-light': 'rgba(190, 100, 254, 0.15)',
+        },
       },
       keyframes: {
         // keyframes name must match the name you use in your animation property
@@ -33,6 +64,10 @@ module.exports = {
       animation: {
         // This name is what you will use with `animate-<NAME>` utilities
         'gradient-animation': 'gradient-animation 10s ease infinite',
+      },
+      fontFamily: {
+        sans: ['Quicksand', 'sans-serif'],
+        serif: ['Manrope', 'serif'],
       },
     },
   },

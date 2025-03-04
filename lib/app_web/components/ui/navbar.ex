@@ -6,8 +6,6 @@ defmodule AppWeb.Components.UI.Navbar do
     router: AppWeb.Router,
     statics: AppWeb.static_paths()
 
-  alias Phoenix.LiveView.JS
-
   @doc """
   Renders a navbar.
 
@@ -17,7 +15,9 @@ defmodule AppWeb.Components.UI.Navbar do
 
   def navbar(assigns) do
     ~H"""
-    <nav></nav>
+    <nav>
+
+    </nav>
     """
   end
 end
