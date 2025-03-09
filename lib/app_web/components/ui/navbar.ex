@@ -15,9 +15,7 @@ defmodule AppWeb.Components.UI.Navbar do
 
   def navbar(assigns) do
     ~H"""
-    <nav>
-
-    </nav>
+    <nav></nav>
     """
   end
 end
