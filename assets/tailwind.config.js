@@ -61,6 +61,7 @@ module.exports = {
           }
         },
       },
+
       animation: {
         // This name is what you will use with `animate-<NAME>` utilities
         'gradient-animation': 'gradient-animation 10s ease infinite',
@@ -72,6 +73,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwindcss-motion'),
     require("@tailwindcss/forms"),
     // Allows prefixing tailwind classes with LiveView classes to add rules
     // only when LiveView classes are applied, for example:
