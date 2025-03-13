@@ -1,125 +1,133 @@
-<div class="padding-page-top"></div>
-<div class="max-w-[1150px] mx-auto">
-  <div class="flex justify-center mx-auto">
-    <h3><span class="">ဝီရ</span></h3>
+<%!-- Solid background color change --%>
+<div class="opacity-100 fixed w-full h-full top-0 left-0 z-1000 transition-colors duration-300 ease-in-out
+  has-[.child1:hover]:bg-colors-office-hover-light
+  has-[.child2:hover]:bg-colors-studio-hover-light
+  has-[.child3:hover]:bg-colors-garage-hover-light
+  has-[.child4:hover]:bg-colors-shop-hover-light">
+  <div class="pt-[100px]"></div>
+
+  <%!-- Header section --%>
+  <div class="max-w-[1150px] mx-auto">
+    <div class="flex justify-center mx-auto">
+      <h3><span class="">ဝီရ</span></h3>
+    </div>
+    <div class="flex justify-center">
+      <h1 class="my-[0.67em]">Design by Wera</h1>
+    </div>
   </div>
+
+  <%!-- Cards section --%>
+  <div class="transition-colors duration-300 ease-in-out
+  has-[.child1:hover]:bg-colors-office-hover-light
+  has-[.child2:hover]:bg-colors-studio-hover-light
+  has-[.child3:hover]:bg-colors-garage-hover-light
+  has-[.child4:hover]:bg-colors-shop-hover-light">
+    <div class="flex flex-col md:flex-row justify-center max-w-[1150px] mr-[1rem] ml-[1rem] md:mx-auto">
+      <%!-- Web Dev section --%>
+      <div class="child1 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+        <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+          <i data-lucide="heart-handshake" class="text-colors-office"></i>
+          <p class="leading-[1.6] mt-2">Aspiring Phoenix Developer & Full-Stack Enthusiast...</p>
+        </div>
+
+        <a
+          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-colors-office"
+          href="office.html"
+        >
+          <img
+            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+            src={~p"/images/Illustration.png"}
+            alt="Image"
+          />
+
+          <div class="flex justify-between mt-2">
+            Web Dev <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <%!-- Learning section --%>
+      <div class="child2 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+        <div class="bg-colors-studio-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+          <i data-lucide="brain-circuit" class="text-colors-studio"></i>
+          <p class="leading-[1.6] mt-2">lifelong learner with a knack for problem-solving...</p>
+        </div>
+
+        <a
+          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(89,122,255,0.35)] hover:-translate-y-1 transition-all hover:border-colors-studio"
+          href="office.html"
+        >
+          <img
+            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+            src={~p"/images/Illustration.png"}
+            alt="Image"
+          />
+
+          <div class="flex justify-between mt-2">
+            Learning <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <%!-- Art & Adventure section --%>
+      <div class="child3 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+        <div class="bg-colors-garage-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+          <i data-lucide="bike" class="text-colors-garage"></i>
+          <p class="leading-[1.6] mt-2">avid cyclist who loves who loves to draw...</p>
+        </div>
+
+        <a
+          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(255,138,49,0.35)] hover:-translate-y-1 transition-all hover:border-colors-garage"
+          href="office.html"
+        >
+          <img
+            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+            src={~p"/images/Illustration.png"}
+            alt="Image"
+          />
+
+          <div class="flex justify-between mt-2">
+            Art & Adventure <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <%!-- Leadership section --%>
+      <div class="child4 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+        <div class="bg-colors-shop-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+          <i data-lucide="users" class="text-colors-shop"></i>
+          <p class="leading-[1.6] mt-2">active campus leader engaged in cultural clubs...</p>
+        </div>
+
+        <a
+          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(190,100,254,0.35)] hover:-translate-y-1 transition-all hover:border-colors-shop"
+          href="office.html"
+        >
+          <img
+            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+            src={~p"/images/Illustration.png"}
+            alt="Image"
+          />
+
+          <div class="flex justify-between mt-2">
+            Leadership <i data-lucide="arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="pt-[50px]"></div>
-  <div class="flex justify-center">
-    <h1>Design by Wera</h1>
-  </div>
-</div>
 
-<div>
-  <div class="flex flex-col md:flex-row justify-center max-w-[1150px] mr-[1rem] ml-[1rem] md:mx-auto">
-    <div class="m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-      <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#12c98c"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-heart-handshake"
+  <%!-- About me section --%>
+  <div class="max-w-[1150px] mx-auto">
+    <div class="flex justify-center">
+      <a
+        class="bg-white flex border border-gray-300 rounded-lg p-4 m-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c]"
+        href="office.html"
       >
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /><path d="m18 15-2-2" /><path d="m15 18-2-2" />
-      </svg>
-      <br /> A UX Designer and Front-End Engineer...
-      </div>
-
-      <a class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c]" href="office.html">
-      <img class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden" src="your-image.jpg" alt="Image">
-      <div class="flex justify-between">
-        Office <i data-lucide="arrow-right"></i>
-      </div>
+        About Me <i data-lucide="arrow-right" class="ml-2"></i>
       </a>
     </div>
-
-    <div class="m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-      <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#12c98c"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-heart-handshake"
-      >
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /><path d="m18 15-2-2" /><path d="m15 18-2-2" />
-      </svg>
-      <br /> A UX Designer and Front-End Engineer...
-      </div>
-
-      <a class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c]" href="office.html">
-      <img class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden" src="your-image.jpg" alt="Image">
-      <div class="flex justify-between">
-        Office <i data-lucide="arrow-right"></i>
-      </div>
-      </a>
-    </div>
-
-
-    <div class="m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-      <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#12c98c"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-heart-handshake"
-      >
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /><path d="m18 15-2-2" /><path d="m15 18-2-2" />
-      </svg>
-      <br /> A UX Designer and Front-End Engineer...
-      </div>
-
-      <a class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c]" href="office.html">
-      <img class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden" src="your-image.jpg" alt="Image">
-      <div class="flex justify-between">
-        Office <i data-lucide="arrow-right"></i>
-      </div>
-      </a>
-    </div>
-
-
-    <div class="m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-      <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#12c98c"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-heart-handshake"
-      >
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /><path d="m18 15-2-2" /><path d="m15 18-2-2" />
-      </svg>
-      <br /> A UX Designer and Front-End Engineer...
-      </div>
-
-      <a class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c]" href="office.html">
-      <img class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden" src="your-image.jpg" alt="Image">
-      <div class="flex justify-between">
-        Office <i data-lucide="arrow-right"></i>
-      </div>
-      </a>
-    </div>
-
   </div>
 </div>

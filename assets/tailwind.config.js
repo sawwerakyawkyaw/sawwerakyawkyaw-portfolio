@@ -66,8 +66,8 @@ module.exports = {
         'gradient-animation': 'gradient-animation 10s ease infinite',
       },
       fontFamily: {
-        sans: ['Quicksand', 'sans-serif'],
-        serif: ['Manrope', 'serif'],
+        quick: ['Quicksand', 'sans-serif'],
+        manrope: ['Manrope', 'serif'],
       },
     },
   },

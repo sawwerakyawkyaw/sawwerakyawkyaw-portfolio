@@ -8,11 +8,7 @@
 @layer utilities {
   .animated-gradient {
     @apply h-screen bg-[length:300%_300%] animate-gradient-animation;
-    background-image: linear-gradient(45deg, #4158D0, #edffdf, #cfd9ff, #ffebc4);
-  }
-
-  .padding-page-top {
-    @apply pt-[100px];
+    background-image: linear-gradient(445deg, #cec8ff, #edffdf, #cfd9ff, #ffebc4);
   }
 }
 
