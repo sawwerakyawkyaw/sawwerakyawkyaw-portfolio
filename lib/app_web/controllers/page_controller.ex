@@ -6,4 +6,12 @@ defmodule AppWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def aboutme(conn, _params) do
+    render(conn, :aboutme, layout: false)
+  end
+
+  def resume(conn, _params) do
+    render(conn, :resume, layout: false)
+  end
 end

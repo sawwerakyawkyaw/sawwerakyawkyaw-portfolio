@@ -1,141 +1,146 @@
-<%!-- Solid background color change --%>
-<div class="opacity-100 w-full h-full top-0 left-0 z-1000 transition-colors duration-300 ease-in-out
-  has-[.child1:hover]:bg-colors-office-hover-light
-  has-[.child2:hover]:bg-colors-studio-hover-light
-  has-[.child3:hover]:bg-colors-garage-hover-light
-  has-[.child4:hover]:bg-colors-shop-hover-light">
-  <div class="pt-[50px]"></div>
+<%!-- Gradient animation background --%>
+<div class="animated-gradient text-[1rem] leading-[1.6] w-full m-0 mx-auto font-manrope has-[.child1:hover]:animate-none has-[.child2:hover]:animate-none has-[.child3:hover]:animate-none has-[.child4:hover]:animate-none">
+  <%!-- Solid background color change --%>
+  <div class="opacity-100 w-full h-full top-0 left-0 z-1000 transition-colors duration-300 ease-in-out
+    has-[.child1:hover]:bg-colors-office-hover-light
+    has-[.child2:hover]:bg-colors-studio-hover-light
+    has-[.child3:hover]:bg-colors-garage-hover-light
+    has-[.child4:hover]:bg-colors-shop-hover-light">
+    <div class="pt-[50px]"></div>
 
-  <%!-- Header section --%>
-  <div class="max-w-[1150px] mx-auto">
-    <div class="group flex justify-center mx-auto">
-      <div class="">
-        <img src={~p"/images/wera-logo.svg"} alt="Avatar" width="50px" height="90px" />
+    <%!-- Header section --%>
+    <div class="max-w-[1150px] mx-auto">
+      <div class="group flex justify-center mx-auto">
+        <div class="">
+          <img src={~p"/images/wera-logo.svg"} alt="Avatar" width="50px" height="90px" />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <h1 class="font-manrope text-[2.5rem] font-bold my-[0.67em]">
+          Design by <span class="text-colors-office">Wera</span>
+        </h1>
       </div>
     </div>
-    <div class="flex justify-center">
-      <h1 class="font-manrope text-[2.5rem] font-bold my-[0.67em]">
-        Design by <span class="text-colors-office">Wera</span>
-      </h1>
-    </div>
-  </div>
 
-  <%!-- Cards section --%>
-  <div class="transition-colors duration-300 ease-in-out
-  has-[.child1:hover]:bg-colors-office-hover-light
-  has-[.child2:hover]:bg-colors-studio-hover-light
-  has-[.child3:hover]:bg-colors-garage-hover-light
-  has-[.child4:hover]:bg-colors-shop-hover-light">
-    <div class="flex flex-col md:flex-row justify-center max-w-[1150px] mr-[1rem] ml-[1rem] md:mx-auto">
-      <%!-- Web Dev section --%>
-      <div class="child1 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-        <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-          <i data-lucide="heart-handshake" class="text-colors-office"></i>
-          <p class="leading-[1.6] mt-2">Aspiring Phoenix Developer & Full-Stack Enthusiast...</p>
+    <%!-- Cards section --%>
+    <div class="transition-colors duration-300 ease-in-out
+    has-[.child1:hover]:bg-colors-office-hover-light
+    has-[.child2:hover]:bg-colors-studio-hover-light
+    has-[.child3:hover]:bg-colors-garage-hover-light
+    has-[.child4:hover]:bg-colors-shop-hover-light">
+      <div class="flex flex-col md:flex-row justify-center max-w-[1150px] mr-[1rem] ml-[1rem] md:mx-auto">
+        <%!-- Web Dev section --%>
+        <div class="child1 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+          <div class="bg-colors-office-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+            <i data-lucide="heart-handshake" class="text-colors-office"></i>
+            <p class="leading-[1.6] mt-2">
+              Aspiring Phoenix Developer & Full-Stack Enthusiast...
+            </p>
+          </div>
+
+          <a
+            class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-colors-office"
+            href="office.html"
+          >
+            <img
+              id="imageRotator1"
+              class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+              src={~p"/images/FRONT-02.png"}
+              alt="Image"
+            />
+
+            <div class="flex justify-between mt-2">
+              Web Dev <i data-lucide="arrow-right"></i>
+            </div>
+          </a>
         </div>
 
-        <a
-          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-colors-office"
-          href="office.html"
-        >
-          <img
-            id="imageRotator1"
-            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
-            src={~p"/images/FRONT-02.png"}
-            alt="Image"
-          />
-
-          <div class="flex justify-between mt-2">
-            Web Dev <i data-lucide="arrow-right"></i>
+        <%!-- Learning section --%>
+        <div class="child2 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+          <div class="bg-colors-studio-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+            <i data-lucide="brain-circuit" class="text-colors-studio"></i>
+            <p class="leading-[1.6] mt-2">lifelong learner with a knack for problem-solving...</p>
           </div>
-        </a>
-      </div>
 
-      <%!-- Learning section --%>
-      <div class="child2 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-        <div class="bg-colors-studio-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-          <i data-lucide="brain-circuit" class="text-colors-studio"></i>
-          <p class="leading-[1.6] mt-2">lifelong learner with a knack for problem-solving...</p>
+          <a
+            class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(89,122,255,0.35)] hover:-translate-y-1 transition-all hover:border-colors-studio"
+            href="office.html"
+          >
+            <img
+              id="imageRotator2"
+              class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+              src={~p"/images/FRONT-01.png"}
+              alt="Image"
+            />
+
+            <div class="flex justify-between mt-2">
+              Learning <i data-lucide="arrow-right"></i>
+            </div>
+          </a>
         </div>
 
-        <a
-          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(89,122,255,0.35)] hover:-translate-y-1 transition-all hover:border-colors-studio"
-          href="office.html"
-        >
-          <img
-            id="imageRotator2"
-            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
-            src={~p"/images/FRONT-01.png"}
-            alt="Image"
-          />
-
-          <div class="flex justify-between mt-2">
-            Learning <i data-lucide="arrow-right"></i>
+        <%!-- Art & Adventure section --%>
+        <div class="child3 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+          <div class="bg-colors-garage-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+            <i data-lucide="bike" class="text-colors-garage"></i>
+            <p class="leading-[1.6] mt-2">avid cyclist who loves who loves to draw...</p>
           </div>
-        </a>
-      </div>
 
-      <%!-- Art & Adventure section --%>
-      <div class="child3 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-        <div class="bg-colors-garage-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-          <i data-lucide="bike" class="text-colors-garage"></i>
-          <p class="leading-[1.6] mt-2">avid cyclist who loves who loves to draw...</p>
+          <a
+            class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(255,138,49,0.35)] hover:-translate-y-1 transition-all hover:border-colors-garage"
+            href="office.html"
+          >
+            <img
+              id="imageRotator3"
+              class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+              src={~p"/images/FRONT-04.png"}
+              alt="Image"
+            />
+
+            <div class="flex justify-between mt-2">
+              Art & Adventure <i data-lucide="arrow-right"></i>
+            </div>
+          </a>
         </div>
 
-        <a
-          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(255,138,49,0.35)] hover:-translate-y-1 transition-all hover:border-colors-garage"
-          href="office.html"
-        >
-          <img
-            id="imageRotator3"
-            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
-            src={~p"/images/FRONT-04.png"}
-            alt="Image"
-          />
-
-          <div class="flex justify-between mt-2">
-            Art & Adventure <i data-lucide="arrow-right"></i>
+        <%!-- Leadership section --%>
+        <div class="child4 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
+          <div class="bg-colors-shop-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
+            <i data-lucide="users" class="text-colors-shop"></i>
+            <p class="leading-[1.6] mt-2">active campus leader engaged in cultural clubs...</p>
           </div>
-        </a>
-      </div>
 
-      <%!-- Leadership section --%>
-      <div class="child4 m-2 max-w-full w-full md:max-w-[22%] md:w-auto !ml-0">
-        <div class="bg-colors-shop-hover-light p-[1rem] rounded-t-[10px] m-2 !mt-0 !mb-0">
-          <i data-lucide="users" class="text-colors-shop"></i>
-          <p class="leading-[1.6] mt-2">active campus leader engaged in cultural clubs...</p>
+          <a
+            class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(190,100,254,0.35)] hover:-translate-y-1 transition-all hover:border-colors-shop"
+            href="office.html"
+          >
+            <img
+              id="imageRotator4"
+              class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
+              src={~p"/images/FRONT-03.png"}
+              alt="Image"
+            />
+
+            <div class="flex justify-between mt-2">
+              Leadership <i data-lucide="arrow-right"></i>
+            </div>
+          </a>
         </div>
-
-        <a
-          class="block bg-white border border-gray-300 rounded-lg p-4 hover:shadow-[5px_5px_0px_rgba(190,100,254,0.35)] hover:-translate-y-1 transition-all hover:border-colors-shop"
-          href="office.html"
-        >
-          <img
-            id="imageRotator4"
-            class="max-w-none md:max-w-[250px] w-full h-[150px] object-cover overflow-hidden"
-            src={~p"/images/FRONT-03.png"}
-            alt="Image"
-          />
-
-          <div class="flex justify-between mt-2">
-            Leadership <i data-lucide="arrow-right"></i>
-          </div>
-        </a>
       </div>
     </div>
-  </div>
 
-  <div class="pt-[50px]"></div>
+    <div class="pt-[50px]"></div>
 
-  <%!-- About me section --%>
-  <div class="max-w-[1150px] mx-auto">
-    <div class="flex justify-center">
-      <a
-        class="bg-white flex border border-gray-300 rounded-lg p-4 m-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c] animate-bounce"
-        href="office.html"
-      >
-        About Me <i data-lucide="arrow-right" class="ml-2"></i>
-      </a>
+    <%!-- About me section --%>
+    <div class="max-w-[1150px] mx-auto">
+      <div class="flex justify-center">
+        <a
+          class="bg-white flex border border-gray-300 rounded-lg p-4 m-4 hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 transition-all hover:border-[#12c98c] animate-bounce"
+          href={~p"/aboutme"}
+        >
+          About Me <i data-lucide="arrow-right" class="ml-2"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>
