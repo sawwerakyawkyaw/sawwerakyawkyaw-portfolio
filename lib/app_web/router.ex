@@ -20,6 +20,10 @@ defmodule AppWeb.Router do
     get "/", PageController, :home
     get "/aboutme", PageController, :aboutme
     get "/resume", PageController, :resume
+    get "/webdev", PageController, :webdev
+    get "/learning", PageController, :learning
+    get "/art", PageController, :art
+    get "/leadership", PageController, :leadership
   end
 
   # Other scopes may use custom stacks.

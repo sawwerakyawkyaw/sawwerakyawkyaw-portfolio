@@ -56,43 +56,43 @@ defmodule AppWeb.Components.UI.Navbar do
           <ul class="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0">
             <li>
               <.link
-                href={~p"/"}
-                class="block py-2 md:py-0 px-2 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
+                href={~p"/aboutme"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
                 aria-current="page"
               >
-                Home
+                About
               </.link>
             </li>
             <li>
               <.link
-                href={~p"/aboutme"}
-                class="block py-2 md:py-0 px-2 text-center text-gray-900 rounded-sm hover:bg-colors-studio-hover-light md:border-0 md:hover:text-colors-studio dark:text-white md:dark:hover:text-colors-studio-light dark:hover:bg-colors-studio-light dark:hover:text-colors-studio-light"
+                href={~p"/webdev"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-studio-hover-light md:border-0 md:hover:text-colors-studio dark:text-white md:dark:hover:text-colors-studio-light dark:hover:bg-colors-studio-light dark:hover:text-colors-studio-light"
               >
-                Webdev
+                WebDev
               </.link>
             </li>
             <li>
               <.link
-                href={~p"/aboutme"}
-                class="block py-2 md:py-0 px-2 text-center text-gray-900 rounded-sm hover:bg-colors-garage-hover-light md:border-0 md:hover:text-colors-garage dark:text-white md:dark:hover:text-colors-garage-light dark:hover:bg-colors-garage-light dark:hover:text-colors-garage-light"
+                href={~p"/learning"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-garage-hover-light md:border-0 md:hover:text-colors-garage dark:text-white md:dark:hover:text-colors-garage-light dark:hover:bg-colors-garage-light dark:hover:text-colors-garage-light"
               >
                 Learning
               </.link>
             </li>
             <li>
               <.link
-                href={~p"/aboutme"}
-                class="block py-2 md:py-0 px-2 text-center text-gray-900 rounded-sm hover:bg-colors-shop-hover-light md:border-0 md:hover:text-colors-shop dark:text-white md:dark:hover:text-colors-studio-light dark:hover:bg-colors-shop-light dark:hover:text-colors-shop-light"
+                href={~p"/art"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-shop-hover-light md:border-0 md:hover:text-colors-shop dark:text-white md:dark:hover:text-colors-studio-light dark:hover:bg-colors-shop-light dark:hover:text-colors-shop-light"
               >
                 Art
               </.link>
             </li>
             <li>
               <.link
-                href={~p"/aboutme"}
-                class="block py-2 md:py-0 px-2 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
+                href={~p"/leadership"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
               >
-                About
+                Leadership
               </.link>
             </li>
           </ul>

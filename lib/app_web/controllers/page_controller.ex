@@ -11,7 +11,19 @@ defmodule AppWeb.PageController do
     render(conn, :aboutme, layout: false)
   end
 
-  def resume(conn, _params) do
-    render(conn, :resume, layout: false)
+  def webdev(conn, _params) do
+    render(conn, :webdev, layout: false)
+  end
+
+  def learning(conn, _params) do
+    render(conn, :learning, layout: false)
+  end
+
+  def art(conn, _params) do
+    render(conn, :art, layout: false)
+  end
+
+  def leadership(conn, _params) do
+    render(conn, :leadership, layout: false)
   end
 end
