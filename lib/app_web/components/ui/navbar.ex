@@ -56,15 +56,6 @@ defmodule AppWeb.Components.UI.Navbar do
           <ul class="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0">
             <li>
               <.link
-                href={~p"/aboutme"}
-                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
-                aria-current="page"
-              >
-                About
-              </.link>
-            </li>
-            <li>
-              <.link
                 href={~p"/webdev"}
                 class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-studio-hover-light md:border-0 md:hover:text-colors-studio dark:text-white md:dark:hover:text-colors-studio-light dark:hover:bg-colors-studio-light dark:hover:text-colors-studio-light"
               >
@@ -93,6 +84,15 @@ defmodule AppWeb.Components.UI.Navbar do
                 class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
               >
                 Leadership
+              </.link>
+            </li>
+            <li>
+              <.link
+                href={~p"/aboutme"}
+                class="block py-2 md:py-0 px-3 text-center text-gray-900 rounded-sm hover:bg-colors-office-hover-light md:border-0 md:hover:text-colors-office dark:text-white md:dark:hover:text-colors-office-light dark:hover:bg-colors-office-light dark:hover:text-colors-office-light"
+                aria-current="page"
+              >
+                About
               </.link>
             </li>
           </ul>
