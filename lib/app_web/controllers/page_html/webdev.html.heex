@@ -4,7 +4,6 @@
 
 <%!-- Header section --%>
 <div class="mr-[1rem] ml-[1rem] md:mx-auto max-w-[850px] border border-colors-office rounded-[10px] bg-colors-office-hover-light p-[2rem] flex flex-col md:flex-row justify-between text-gray-900 dark:text-gray-100">
-
   <%!-- Skill-set icons --%>
   <div class="w-full md:w-[45%]">
     <h2 class="text-[2rem] font-bold pb-[1.5rem]">Web Dev</h2>
@@ -27,9 +26,67 @@
   <%!--  Description --%>
   <div class="w-full md:w-[45%]">
     <p class="block my-4 mx-0 !mb-0">
-      I’m aispring, a versatile full-stack web developer crafting robust and innovative solutions. I have experince in the Phoenix Framework paired with PostgreSQL to build high-performance, scalable back-end systems. Passionate about blending cutting-edge technologies, I thrive on building efficient, user-focused applications from concept to deployment.
+      I’m aispring, a versatile full-stack web developer crafting robust and innovative solutions. I have experince in the Phoenix Framework paired with PostgreSQL. Passionate about blending cutting-edge technologies, I thrive on building efficient, user-focused applications from concept to deployment.
     </p>
   </div>
 </div>
 
+<div class="pt-[50px]"></div>
 
+<%!-- Portfolio section --%>
+<div class="mx-auto max-w-[800px]">
+  <a
+    class="border border-gray-300 rounded-[10px] p-8 flex flex-wrap flex-col md:flex-row justify-between gap-2 content-center relative bg-white block no-underline hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 hover:border-colors-office"
+    href={~p"/webdev"}
+  >
+    <div class="w-[45%] relative w-full h-[250px] overflow-hidden">
+      <img
+        class="rounded-[10px] absolute w-full h-full object-cover object-top"
+        src={~p"/images/wera-profile.PNG"}
+      />
+    </div>
+    <div class="w-[45%] ml-2">
+      <h4 class="text-[1.25rem] font-bold leading-[1.6] block mt-[1.33em] mb-[1.33em] mx-0 mb-0">
+        CSCI 379 - Full Stack Web Dev
+      </h4>
+      <p class="text-colors-secondary-text dark:text-gray-300">
+        <b>Computer Science Elective Course</b>
+        | functional programming principles using the Elixir programming language
+      </p>
+      <div class="flex flex-wrap mb-2 gap-2">
+        <div class="flex content-center rounded-[10px] mr-2">
+          <i data-lucide="heart-handshake" class="mr-2 text-colors-office "></i>Tailwind CSS
+        </div>
+        <div class="flex content-center rounded-[10px] mr-2">
+          <i data-lucide="code" class="mr-2 text-colors-office"></i>Front-End Dev
+        </div>
+        <div class="flex content-center rounded-[10px] mr-2">
+          <i data-lucide="database" class="mr-2 text-colors-office"></i>Back-End Dev
+        </div>
+        <div class="flex content-center rounded-[10px] mr-2">
+          <i data-lucide="app-window" class="mr-2 text-colors-office"></i>Phoenix
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a
+    class="border border-gray-300 rounded-[10px] p-8 flex flex-wrap flex-col md:flex-row justify-between gap-2 content-center relative bg-white block no-underline hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 hover:border-colors-office mt-4"
+    href={~p"/webdev"}
+  >
+    <div class="flex content-center justify-center w-full">
+      <h2 class="text-[2rem] font-bold dark:text-white">Coming Soon...!</h2>
+    </div>
+  </a>
+
+  <a
+    class="border border-gray-300 rounded-[10px] p-8 flex flex-wrap flex-col md:flex-row justify-between gap-2 content-center relative bg-white block no-underline hover:shadow-[5px_5px_0px_rgba(18,201,140,0.35)] hover:-translate-y-1 hover:border-colors-office mt-4"
+    href={~p"/webdev"}
+  >
+    <div class="flex content-center justify-center w-full">
+      <h2 class="text-[2rem] font-bold dark:text-white">Coming Soon...!</h2>
+    </div>
+  </a>
+</div>
+
+<div class="pt-[50px]"></div>
