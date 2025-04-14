@@ -23,6 +23,8 @@ defmodule AppWeb.Router do
     get "/learning", PageController, :learning
     get "/art", PageController, :art
     get "/leadership", PageController, :leadership
+
+    live "/animations", AnimationLive
   end
 
   # Other scopes may use custom stacks.
